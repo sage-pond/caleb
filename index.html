@@ -1,63 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="icon" sizes="192x192" href="23.svg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sage Pond: Coming soon</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-</head>
-<body>
-        <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #000000;
-    color: white;
-    text-align: center;
-  }
-  img{
-    position: relative;
-    top:-80px;
-    height:250px;
-    width:350px;
-  }
-  nav{
-    backdrop-filter: blur(20px);
-    display:flex;
+<!D OCTYPE html>
 
-  }
-  nav img{
-    margin:0 auto;
-    text-align: center;
-  }
-  header{
-    font-style: bold;
-    font-size: 60px;
-  }
-  footer{
-    position:relative;
-    bottom:-300px;
-    background-color:rgb(31, 29, 29);
-  }
-    </style>
-    <nav>
-        <img src = "4.svg"/>
-    </nav>
-    <header>
-        <h1 class="font-black"><span id ="head"></span></h1>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>sagepond</title>
+
+</head>
+
+<body onload="window.scrollTo(0.1);">
+
+   <header>
+
+        <div class="logo">
+
+            <img class="icon" src="1.png" alt="">
+
+        </div>
+
+        <div id="welcome-container"></div>
+
+        <div class="links">
+
+            <ul>
+
+                <li><a href="index.html">Refresh</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </div>
+
     </header>
- 
+
+   <main>
+
+      <section class="ai-interface">
+
+         <div class="response" id="response"></div>
+
+         <div class="text-area" id="text-area">
+
+            <input type="text" name="text" id="text" class="text">
+
+            <input type="submit" class="submit" name="submit" id="submit" value="Send" onclick="lot()">
+
+         </div>
+
+      </section>
+
+   </main>
+
+   <footer>
+
+      <div class="note">
+
+         <p>@ 2023 All rights reserved <a href="mailto:info@sagepond.com">SAGE-POND</a></p>
+
+      </div>
+
+      
+
+   </footer>  
+
+   <script src="main.js"></script>  
+
 </body>
-<script> 
-  var typed2 = new Typed('#head', {
-    strings: ['GET READY FOR THE NEXT BIG THING','COMING SOON'],
-    typeSpeed: 50,
-    backSpeed: 10,
-    backDelay:500,
-    startDelay:1000,
-    loop: true
-  });
-</script>
-</html>
+
+    </html
